@@ -32,7 +32,7 @@ task :vundle do
   target = "#{platform_files['.vim']}/bundle/neobundle.vim"
   Installer.git_clone('https://github.com/Shougo/neobundle.vim', target)
   puts "Running BundleInstall to install plugins...this will take a couple minutes."
-  `vim +NeoBundleInstall +qall`
+  `vim - +NeoBundleInstall +qall`
   puts "vim plugins installed."
 end
 
